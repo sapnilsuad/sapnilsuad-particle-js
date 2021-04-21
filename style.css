@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+/* ---- reset ---- */ 
+body{ 
+    margin:0; 
+    font:normal 75% Arial, Helvetica, sans-serif;  
+    overflow-x: hidden;
+} 
+canvas{ 
+    display: block; 
+    vertical-align: bottom;  
+} 
+/* ---- particles.js container ---- */  
+#particles-js{ 
+    position:absolute; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #000000; 
+    background-image: url(""); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%; 
+} 
+.navbar-brand img{
+    width: 20%; 
+}
+.collapse{
+    margin-left: -500px !important; 
+} 
+.nav-link{
+    font-family: 'Dotum';
+    font-size: 16px;
+    color: #fff !important;    
+}
+.btn-1{
+    border: 1px solid #fff;
+    background: transparent;
+    padding: 5px 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    margin-right: 15px;
+}
+.btn-2{
+    border: 1px solid #6E00FF;
+    background: #6E00FF;
+    padding: 5px 10px;
+    color: #fff; 
+    text-transform: uppercase;
+    letter-spacing: 1px;  
+}
+.navbar i{ 
+    color: #fff;
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.navbar i:hover{
+    color: #6E00FF;
+}
+.banner{ 
+   text-align: center
+} 
+.banner h1{
+    margin-top: 200px;
+    color: #fff;
+    font-family: 'calibri';
+    font-weight: bold; 
+    font-size: 52px; 
+    margin-bottom: 40px; 
+}
+.banner h1 span{
+    text-decoration: underline;
+}
+.banner p{
+    padding: 0 200px; 
+    font-size: 20px;
+    color: #fff;
+    font-weight: 200;
+    font-family: 'Dotum'; 
+    margin-bottom: 30px; 
+}
+.banner .btn-3{
+    border: 1px solid #6E00FF;
+    background: #6E00FF;
+    padding: 10px 20px;
+    color: #fff; 
+    text-transform: uppercase;
+    letter-spacing: 1px;   
+    font-size: 18px; 
+    font: Helvetica, sans-serif;   
+}
+.banner .btn-4{
+    border: 1px solid #fff;
+    background: transparent;
+    padding: 10px 20px;
+    color: #fff; 
+    text-transform: uppercase;
+    letter-spacing: 1px;   
+    font-size: 18px; 
+    font: Helvetica, sans-serif;   
+    margin-left: 25px;
+}
+@media (min-width: 768px) and (max-width: 1024px) { 
+    .collapse{
+        margin-left: 0px !important;  
+    } 
+    .btn-1{
+        margin-right: 0px !important;
+        margin-bottom: 20px;
+    }
+    .btn-2{
+        margin-bottom: 20px;
+    }
+    .navbar i{
+        text-align: center;
+    }
+    .sep{
+        left: 25px !important;
+    }
+    .banner h1 {
+        font-size: 42px;
+    }
+    .banner p{
+        padding: 0 100px !important;
+    }
+
+
+}
+
+@media (min-width: 320px) and (max-width: 750px) { 
+    .collapse{
+        margin-left: 0px !important;   
+    } 
+    .navbar-brand{
+        width: 65% !important; 
+    }
+    .btn-1{
+        margin-right: 0px !important; 
+        margin-bottom: 20px; 
+    }
+    .btn-2{
+        margin-bottom: 20px;
+    }
+    .navbar i{
+        text-align: center;
+    }
+    .sep{
+        left: 0px !important;
+    }
+    .banner h1 {
+        margin-top: 50px !important;
+        font-size: 28px;
+    }
+    .banner p{
+        padding: 0 30px !important;
+    }
+    .btn-3{
+        margin-bottom: 20px !important;
+    }
+    .btn-4{
+        margin-left: 0 !important;
+        padding: 10px 45px !important;
+    }
+}

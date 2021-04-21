@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">    
+    <title>Vanguard</title>    
+</head>
+<body> 
+  <div id="particles-js"></div>  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">  
+        <nav class="navbar navbar-expand-lg navbar-dark">   
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">  
+              <img src="logo.png" alt="">      
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">   
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Company</a>   
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Customers & Partners</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Industry Solutions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Resources & Support</a>   
+                </li>
+                <button class="btn-1">sign in</button> 
+                <button class="btn-2">Request a demo</button>  
+                <i class="fa fa-search" aria-hidden="true"></i> 
+              </ul> 
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div> 
+  </div>    
+  <div class="container position-absolute sep" style="display: block; left: 50px;">  
+    <div class="row">
+      <div class="col-md-12 banner"> 
+        <h1>Unlock the power of your <span>building</span> <br>
+          and <span>infrastructure</span> data  
+        </h1>     
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, magnam 
+          nulla culpa nam enim perferendis excepturi saepe similique.
+        </p>
+        <button class="btn-3">Request a demo</button>
+        <button class="btn-4"> contact us</button>    
+      </div>
+    </div>
+  </div>
+
+ 
+
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<!-- stats.js lib -->  
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script> 
+  particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":71.92807192807193,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.display = 'none'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+</script>
+</body>
+</html>
